@@ -9,9 +9,8 @@ This web app helps users manage their **income and expenses** while tracking the
 - ➕ Add income and expense transactions  
 - ❌ Delete transactions easily  
 - 💵 Automatically calculates **total balance**, **income**, and **expenses**  
-- 💾 Saves your data locally (even after page refresh)  
-- 📱 Responsive, beginner-friendly, and human-centered design  
-
+- 💾 Saves your data locally ,even after page refresh 
+ 
 ---
 
 ## 🧠 Technologies Used
