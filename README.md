@@ -17,8 +17,8 @@ This web app helps users manage their **income and expenses** while tracking the
 ## 🧠 Technologies Used
 | Technology | Purpose |
 |-------------|----------|
-| **HTML5** | Structure of the app |
-| **CSS3** | Styling and layout |
+| **HTML** | Structure of the app |
+| **CSS** | Styling and layout |
 | **JavaScript (Vanilla)** | Logic and interactivity |
 
 
