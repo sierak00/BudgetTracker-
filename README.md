@@ -19,6 +19,6 @@ This web app helps users manage their **income and expenses** while tracking the
 |-------------|----------|
 | **HTML** | Structure of the app |
 | **CSS** | Styling and layout |
-| **JavaScript (Vanilla)** | Logic and interactivity |
+| **JavaScript ** | Logic and interactivity |
 
 
