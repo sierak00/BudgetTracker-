@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d5d7e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fa-solid fa-wallet"></i> Budget Tracker</h1>
+      <p class="subtitle">Track your income and expenses easily</p>
+    </header>
+
+    <section class="balance-card glass">
+      <h2>Your Balance</h2>
+      <p id="balance" class="balance-amount">$0.00</p>
+    </section>
+
+    <section class="summary glass">
+      <div class="summary-box income-box">
+        <h3><i class="fa-solid fa-arrow-trend-up"></i> Income</h3>
+        <p id="income">$0.00</p>
+      </div>
+      <div class="summary-box expense-box">
+        <h3><i class="fa-solid fa-arrow-trend-down"></i> Expense</h3>
+        <p id="expense">$0.00</p>
+      </div>
+    </section>
+
+    <section class="form-section glass">
+      <h2>Add Transaction</h2>
+      <form id="transaction-form">
+        <input type="text" id="text" placeholder="Description" required />
+        <input type="number" id="amount" placeholder="Amount (negative = expense)" required />
+        <button type="submit" class="add-btn">+ Add</button>
+      </form>
+    </section>
+
+    <section class="history-section glass">
+      <h2>History</h2>
+      <ul id="list" class="list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>

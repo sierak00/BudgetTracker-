@@ -1,0 +1,180 @@
+ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c3ecf7, #f6c9d5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+
+.glass {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-3px);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+header h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.balance-card {
+  margin-top: 25px;
+}
+.balance-amount {
+  font-size: 2rem;
+  color: #222;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.summary-box {
+  flex: 1;
+  margin: 0 5px;
+  padding: 15px;
+  border-radius: 14px;
+}
+
+.income-box {
+  border-left: 5px solid #27ae60;
+}
+
+.expense-box {
+  border-left: 5px solid #e74c3c;
+}
+
+.summary-box h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.summary-box p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.form-section {
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  outline: none;
+}
+
+.add-btn {
+  padding: 10px;
+  background: linear-gradient(135deg, #81ecec, #74b9ff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #74b9ff, #81ecec);
+}
+
+.list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  animation: fadeIn 0.3s ease;
+}
+
+.list li.income {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.expense {
+  border-right: 5px solid #e74c3c;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  color: #444;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+  .summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
